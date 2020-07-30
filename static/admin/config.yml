@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: KrzysiekF/natura-blog
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -10,6 +11,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
@@ -19,6 +21,21 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "zielnik"
+    label: "Zielnik"
+    folder: "src/pages/zielnik"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "zielnik-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
