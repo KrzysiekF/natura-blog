@@ -1,4 +1,5 @@
 backend:
+  # name: git-gateway
   name: github
   repo: KrzysiekF/natura-blog
   branch: master
@@ -18,7 +19,7 @@ collections:
     label: "Blog"
     folder: "src/pages/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
@@ -33,7 +34,7 @@ collections:
     label: "Zielnik"
     folder: "src/pages/zielnik"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "zielnik"}
       - {label: "Title", name: "title", widget: "string"}

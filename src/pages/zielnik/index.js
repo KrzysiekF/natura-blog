@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
+import HerbariumRoll from '../../components/HerbariumRoll'
 
 export default class ZielnikIndexPage extends React.Component {
   render() {
@@ -22,13 +22,13 @@ export default class ZielnikIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Latest Stories
+            Zielnik
           </h1>
         </div>
         <section className="section">
           <div className="container">
             <div className="content">
-              <BlogRoll />
+              <HerbariumRoll />
             </div>
           </div>
         </section>
