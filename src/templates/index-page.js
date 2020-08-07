@@ -113,8 +113,24 @@ export const IndexPageTemplate = ({
         </div>
       </section>
       <section>
-        <div className={'kk-container mb-30 mt-30'}> 
-          CONTENT INDEX
+        <div className={'kk-container mb-30 mt-30'}>
+          <div className={'grid'}>
+            <div className={'col'}>
+              <h2>Co tam u mnie</h2>
+              <BlogRoll />
+            </div>
+            <div className={'col-1'} />
+            <div className={'col'}>
+              <div className={'box box__border'}>
+                <h2 className={'box__header'}>
+                  Z zielnika
+                </h2>
+                <div className={'box__content'}>
+                  Zielnik
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
