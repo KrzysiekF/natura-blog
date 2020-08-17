@@ -7,6 +7,7 @@ description: "Witaj, cieszę się, że tu jesteś! To pierwszy wpis na moim blog
   tutaj funkcjonować. Ten blog to będzie jedynie dodatek do tego, co się tutaj
   znajdzie ... ale o tym za chwilę. "
 featuredpost: true
+featuredimage: /img/chemex.jpg
 tags:
   - ogłoszenia
 ---
