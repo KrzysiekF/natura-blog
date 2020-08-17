@@ -1,4 +1,17 @@
-@import "~gridlex/src/gridlex";
+@import "~normalize.css/normalize.css";
+@import "~gridlex/dist/gridlex.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:wght@400;500&display=swap');
+
+$color-font: #333333 !default;
+$color-bg: #FFF2E9 !default;
+$color-primary: #5E5868;
+
+body {
+    background-color: $color-bg; 
+    color: $color-font;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
 
 .pb-0 {
     padding-bottom: 0 !important;
@@ -8,8 +21,28 @@
     margin-top: 30px !important; 
 }
 
+.mb-0 {
+    margin-bottom: 0px !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
 .mb-30 {
     margin-bottom: 30px !important;
+}
+
+.mt-0 {
+    margin-top: 0px !important; 
+}
+
+.fs-12 {
+    font-size: 0.75rem !important; 
+}
+
+.text-right {
+    text-align: right !important;
 }
 
 .grid.pb-0 {
@@ -19,8 +52,49 @@
     }
 }
 
-.kk-container {
-    max-width: 1280px;
+h1, h2, h3, h4, h5 {
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    color: $color-primary;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: $color-primary;
+}
+
+.hero {
+    background-image: url('/img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 115vh;
+    text-align: center;
+    padding-top: 2rem;
+
+    .hello-1 {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .hello-2 {
+        font-size: 4rem;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    p {
+        width: 38%;
+        margin: 5px auto;
+    }
+}
+
+.container {
+    max-width: 1650px;
     margin: 0 auto;
 }
 
@@ -48,24 +122,51 @@
 
 .box {
   position: relative;
+}
 
-  &__border {
-    border: 2px solid #663c19; 
-    border-radius: 10px;
-  }
+.title {
+    margin-bottom: 15px;
+    line-height: 1.2;
 
-  &__header {
-    position: absolute;
+    a {
+        text-decoration: none;
+        color: $color-primary;
+    }
+}
+
+.post-meta {
+    font-size: 0.75rem;
+}
+
+.horizontal-list {
     margin: 0;
-    display: inline-block;
-    line-height: 1;
-    top: -12px;
-    left: 20px;
-    background-color: #ffffff;
-    padding: 0 15px;
-  }
+    padding: 0;
+    list-style: none;
 
-  &__content {
-    padding: 30px 20px 25px;
-  }
+    li {
+        display: inline-block; 
+        margin-right: 1rem;
+    }
+}
+
+footer {
+    background-color: $color-primary;
+    color: $color-bg;
+    padding: 2rem 0;
+
+    .menu-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-right: 1rem;
+
+            a {
+                color: $color-bg;
+                text-decoration: none;
+            }
+        }
+    }
 }

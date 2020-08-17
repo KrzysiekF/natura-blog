@@ -19,7 +19,7 @@ class BlogRoll extends React.Component {
                   }`}
               >
                 <header>
-                  {post.frontmatter.featuredimage ? (
+                  {post.frontmatter.featuredimage && false ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
@@ -29,14 +29,14 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
+
+                  <h2 className={'title'}>
+                    <Link to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
+                  </h2>
+
+                  <p className="post-meta">
                     <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
                     </span>
@@ -44,12 +44,12 @@ class BlogRoll extends React.Component {
                 </header>
                 <p>
                   {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
                 </p>
+                <div className={'text-right'}>
+                  <Link className="button" to={post.fields.slug}>
+                    I co dalej...
+                  </Link>
+                </div>
               </article>
             </div>
           ))}

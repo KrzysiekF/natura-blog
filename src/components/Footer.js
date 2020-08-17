@@ -10,68 +10,26 @@ import vimeo from '../img/social/vimeo.svg';
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: '100vw' }} className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Blog
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4 social" style={{ display: 'none' }}>
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-              </div>
+      <footer className="footer">
+        <div className={'container'}>
+          <div className={'grid-noGutter-middle'}>
+            <div className={'col'}>
+              <section className="menu">
+                <ul className="menu-list">
+                  <li>
+                    <Link to="/" className="navbar-item">Bliżej Natury</Link>
+                  </li>
+                  <li>
+                    <Link className="navbar-item" to="/blog">Blog</Link>
+                  </li>
+                  {/* <li>
+                    <Link className="navbar-item" to="/about">About</Link>
+                  </li> */}
+                </ul>
+              </section>
+            </div>
+            <div className={'col text-right fs-12'}>
+              copyright &copy; Krzysztof Furtak 2020
             </div>
           </div>
         </div>
