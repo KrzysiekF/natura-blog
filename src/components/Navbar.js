@@ -1,7 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import React from 'react';
+import { Link } from 'gatsby';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -35,15 +33,14 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="kk-navbar"
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
-          <div className="navbar-brand">
+        <div className="grid grid-middle kk-container pb-0">
+          <div className="col-3">
             <Link to="/" className="navbar-item" title="Logo">
-              <strong>BLIŻEJ</strong><br />
-              <strong>NATURY</strong>
+              <strong>BLIŻEJ NATURY</strong>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -58,11 +55,11 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className={`col ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="kk-navbar-menu">
               <Link className="navbar-item" to="/about">
-                O co kaman?
+                <span>O co kaman?</span>
               </Link>
               <Link className="navbar-item" to="/blog">
                 Blog
@@ -71,24 +68,11 @@ const Navbar = class extends React.Component {
                 Zielnik
               </Link>
             </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ display: 'none' }}
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
           </div>
         </div>
       </nav>
     )
   }
-}
+};
 
-export default Navbar
+export default Navbar;
