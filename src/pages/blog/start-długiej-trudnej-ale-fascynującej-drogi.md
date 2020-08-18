@@ -15,7 +15,7 @@ Na tej stronie chciałbym zgromadzić trochę wiedzy o tym co dla mnie ważne. W
 
 ## Słowianie
 
-Nasi wielcy przodkowie. Znajdziesz tutaj informacje o ich życiu codziennym, ich kulturze i obyczajach. 
+Nasi wielcy przodkowie. Znajdziesz tutaj informacje o ich życiu codziennym, ich kulturze i obyczajach. Dowiesz się w co wierzyli i jakie rytuały praktykowali. Z czasem pojawi się tutaj wszystko co dotyczy **Słowian**.
 
 ## Zioła i Ziołolecznictwo
 
