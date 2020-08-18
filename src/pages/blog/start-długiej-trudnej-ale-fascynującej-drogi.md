@@ -11,11 +11,13 @@ featuredimage: ""
 tags:
   - ogłoszenia
 ---
+Na tej stronie chciałbym zgromadzić trochę wiedzy o tym co dla mnie ważne. Właściwie to uważam, że to powinno być ważne dla nas wszystkich, bo chodzi o naszą przeszłość, o to skąd się wywodzimy.
+
 ## Słowianie
 
 ...
 
-## Zioła i Ziołolecznictwo 
+## Zioła i Ziołolecznictwo
 
 ...
 
