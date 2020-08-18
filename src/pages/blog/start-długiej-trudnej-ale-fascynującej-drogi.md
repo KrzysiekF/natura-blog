@@ -6,8 +6,8 @@ description: "Witaj, cieszę się, że tu jesteś! To pierwszy wpis na moim blog
   początek długiej drogi do witryny, która w niedalekiej przyszłości będzie
   tutaj funkcjonować. Ten blog to będzie jedynie dodatek do tego, co się tutaj
   znajdzie ... ale o tym za chwilę. "
-featuredpost: false
-featuredimage: ""
+featuredpost: true
+featuredimage: /img/blog-index.jpg
 tags:
   - ogłoszenia
 ---
@@ -15,7 +15,7 @@ Na tej stronie chciałbym zgromadzić trochę wiedzy o tym co dla mnie ważne. W
 
 ## Słowianie
 
-...
+Nasi wielcy przodkowie. Znajdziesz tutaj informacje o ich życiu codziennym, ich kulturze i obyczajach. 
 
 ## Zioła i Ziołolecznictwo
 
