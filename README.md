@@ -1,126 +1,248 @@
-# Gatsby + Netlify CMS Starter
+<div align="center" style="margin-bottom:30px">
+    <a href='https://github.com/vagr9k/gatsby-advanced-starter/blob/master/LICENSE'>
+    <img src="https://img.shields.io/github/license/vagr9k/gatsby-advanced-starter.svg" alt="Logo" />
+    </a>
+    <a href='https://github.com/vagr9k/gatsby-advanced-starter'>
+    <img src="https://img.shields.io/github/v/tag/Vagr9K/gatsby-advanced-starter" alt="Logo" />
+    </a>
+        <a href='https://github.com/vagr9k/gatsby-advanced-starter/stargazers'>
+    <img src="https://img.shields.io/github/stars/Vagr9K/gatsby-advanced-starter" alt="Logo" />
+    </a>
+        <a href="https://twitter.com/intent/tweet?text=A%20cool%20%40gatsbyjs%20starter%3A&url=https%3A%2F%2Fgithub.com%2FVagr9K%2Fgatsby-advanced-starter">
+    <img src="https://img.shields.io/twitter/url/https/github.com/vagr9k/gatsby-advanced-starter.svg?style=social" alt="Logo" />
+    </a>
+</div>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
+<div align="center"  style="margin-bottom:30px">
+    <img src="docs/logos/logo.png" alt="Logo" width='400px' height='400px'/>
+</div>
 
-**Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+<div align="center"  style="margin-bottom:30px">
+<a href="https://www.npmjs.com/package/gatsby-theme-advanced"><img src="https://badgen.net/npm/v/gatsby-theme-advanced" alt="npm" /></a>
+<a href='https://coveralls.io/github/Vagr9K/gatsby-advanced-starter?branch=master'><img src='https://coveralls.io/repos/github/Vagr9K/gatsby-advanced-starter/badge.svg?branch=master' alt='Coverage Status' /></a>
+<a href="https://www.npmjs.com/package/gatsby-theme-amaranth"><img src="https://badgen.net/npm/v/gatsby-theme-amaranth" alt="npm" /></a>
+<a href="https://codecov.io/gh/Vagr9K/gatsby-advanced-starter">
+  <img src="https://codecov.io/gh/Vagr9K/gatsby-advanced-starter/branch/master/graph/badge.svg?token=UsUNVAmMLr"/>
+</a>
+<a href="https://www.styled-components.com/"><img src="https://badgen.net/badge/Built%20With/styled%20components/db7093" alt="Built with Styled Components" />
+</a>
+<img src="https://badgen.net/badge/Built With/TypeScript/blue" alt="Powered by TypeScript" />
+<img href="https://advanced-demo.netlify.app/"><img src="https://api.netlify.com/api/v1/badges/69abdfee-1df9-4e69-abe9-e8f5d8c9c630/deploy-status" alt="Advanced Demo"/></a>
+<img href="https://amaranth-demo.netlify.app/"><img src="https://api.netlify.com/api/v1/badges/f9d33573-f168-4ff2-a6e6-e1a7570dd5a0/deploy-status" alt="Amaranth Demo"/></a>
+</div>
 
-This repo contains an example business website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
+<div align="center"  style="margin-bottom:30px">
+<img href="https://open.vscode.dev/vagr9k/gatsby-advanced-starter"><img src="https://open.vscode.dev/badges/open-in-vscode.svg"/></a>
+</div>
 
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
+# Gatsby Advanced Starter
+
+A starter skeleton with advanced features for [Gatsby](https://github.com/gatsbyjs/gatsby/).
+
+This starter aims to provide a minimal base for building advanced GatsbyJS powered websites by using the latest technologies to simplify your process.
+
+It doesn't define any UI limitations in any way and only gives you the basic components for SEO/Links/Infinite Scrolling while creating a comfortable development environment to get started.
+
+Starter supports both [TypeScript](https://www.typescriptlang.org/) and JavaScript, comes with [Jest](https://jestjs.io/) and [Cypress](https://www.cypress.io/) configurations and allows you to write Unit/Integration/E2E tests out of the box.
+
+You are free to use any UI framework/styling options or you can use the [`gatsby-theme-amaranth`](https://www.npmjs.com/package/gatsby-theme-amaranth) as a starting point, which provides a stylish blog design styled with [Styled Components](https://styled-components.com/)
+
+## Demos
+
+[With `gatsby-theme-advanced`](https://advanced-demo.netlify.app/)
+
+[With `gatsby-theme-amaranth`](https://amaranth-demo.netlify.app/).
 
 ## Features
 
-- A simple landing page with blog functionality built with Netlify CMS
-- Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
-- Create Blog posts from Netlify CMS
-- Tags: Separate page for posts under each tag
-- Basic directory organization
-- Uses Bulma for styling, but size is reduced by `purge-css-plugin`
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-- Uses `gatsby-image` with Netlify-CMS preview support
-- Separate components for everything
-- Netlify deploy configuration
-- Netlify function support, see `lambda` folder
-- Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
-- ..and more
+- Gatsby v4 support
+- First class [TypeScript](https://www.typescriptlang.org/) support (for query data and components exposed by the theme)
+- Styled Components used for styling
+- Posts in MDX
+  - Code syntax highlighting
+  - Embed videos
+  - Embed iframes
+- Infinite Scrolling
+- React Query for client side API calls
+- Tags
+  - Separate page for posts under each tag
+- Categories
+  - Separate page for posts under each category
+- Social features
+  - Twitter tweet button
+  - Facebook share/share count
+  - Reddit share/share count
+  - LinkedIn share button
+- Author section
+- Related posts computation and display based on category/tag match ranking
+- [Disqus](https://disqus.com/) support
+- [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image/) for optimized image generation
+- Inline SVG imports
+- High configurability
+- Separate components for everything:
+  - Gatsby Link utilities
+  - SEO
+  - Disqus
+- PWA features
+  - Offline support
+  - Web App Manifest support
+  - Loading progress for slow networks
+- SEO
+  - [Google gtag.js](https://developers.google.com/gtagjs/) support
+  - Sitemap generation
+  - General description tags
+  - [Google Structured Data](https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data)
+  - [OpenGraph Tags (Facebook/Google+/Pinterest)](https://ogp.me/)
+  - [Twitter Tags (Twitter Cards)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
+- RSS feeds
+- Development tools
+  - Yarn 3
+  - [Jest](https://jestjs.io/) for unit/integration testing
+  - [Cypress](https://www.cypress.io/) for E2E testing
+  - CI via GitHub Actions
+  - CD via GitHub Actions
+  - [ESLint](https://eslint.org/) for linting
+  - [Prettier](https://prettier.io/) for code formatting
+  - [React Hooks Linting](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+  - Remark-Lint for linting Markdown
+  - write-good for linting English prose
+  - gh-pages for deploying to GitHub pages
+  - [Netlify](https://www.netlify.com/) deploy configuration
 
-## Prerequisites
+## Getting Started
 
-- Node (I recommend using v8.2.0 or higher)
-- [Gatsby CLI](https://www.gatsbyjs.org/docs/)
-- [Netlify CLI](https://github.com/netlify/cli)
+Install this starter by running the following commands from your CLI:
 
-## Getting Started (Recommended)
-
-Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. The example here is the Kaldi coffee company template (adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms)). Use the button below to build and deploy your own copy of the repository:
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/gatsby-starter-netlify-cms&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
-
-After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete. Next, you’ll need to set up Netlify’s Identity service to authorize users to log in to the CMS.
-
-### Access Locally
-
-Pulldown a local copy of the Github repository Netlify created for you, with the name you specified in the previous step
-```
-$ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
-$ cd [REPO_NAME]
-$ yarn
-$ netlify dev # or ntl dev
-```
-
-This uses the new [Netlify Dev](https://www.netlify.com/products/dev/?utm_source=blog&utm_medium=netlifycms&utm_campaign=devex) CLI feature to serve any functions you have in the `lambda` folder.
-
-To test the CMS locally, you'll need to run a production build of the site:
-
-```
-$ npm run build
-$ netlify dev # or ntl dev
-```
-
-### Media Libraries (installed, but optional)
-
-Media Libraries have been included in this starter as a default. If you are not planning to use `Uploadcare` or `Cloudinary` in your project, you **can** remove them from module import and registration in `src/cms/cms.js`. Here is an example of the lines to comment or remove them your project.
-
-```javascript
-import CMS from 'netlify-cms-app'
-// import uploadcare from 'netlify-cms-media-library-uploadcare'
-// import cloudinary from 'netlify-cms-media-library-cloudinary'
-
-import AboutPagePreview from './preview-templates/AboutPagePreview'
-import BlogPostPreview from './preview-templates/BlogPostPreview'
-import ProductPagePreview from './preview-templates/ProductPagePreview'
-import IndexPagePreview from './preview-templates/IndexPagePreview'
-
-// CMS.registerMediaLibrary(uploadcare);
-// CMS.registerMediaLibrary(cloudinary);
-
-CMS.registerPreviewTemplate('index', IndexPagePreview)
-CMS.registerPreviewTemplate('about', AboutPagePreview)
-CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+```sh
+gatsby new YourProjectName https://github.com/Vagr9K/gatsby-advanced-starter
+cd YourProjectName
+yarn develop # or gatsby develop
 ```
 
-Note: Don't forget to also remove them from `package.json` and `yarn.lock` / `package-lock.json` using `yarn` or `npm`. During the build netlify-cms-app will bundle the media libraries as well, having them removed will save you build time.
-Example:
+Note that the [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli) needs to be installed and updated for the `gatsby` command to work.
+
+Alternatively you can fork the project, make your changes and merge new upstream features when needed:
+
+- [Fork this repository on GitHub](https://github.com/Vagr9K/gatsby-advanced-starter/fork)
+- Run the following commands:
+
+  ```sh
+  git clone https://github.com/${YourUsername}/${YourForkName} YourForkName # Clone your fork
+  cd YourForkName
+  yarn install # or npm install
+  yarn develop # or gatsby develop
+  ```
+
+## Receiving upstream updates
+
+You have multiple options when it comes to receiving upstream updates:
+
+- Pull and merge upstream changes into your repo
+- Change the versions of `gatsby-theme-advanced` and `gatsby-theme-amaranth` from local to remote.
+- Install a different theme, such as the [`gatsby-theme-material`](https://www.npmjs.com/package/gatsby-theme-material).
+
+First option allows you to make your own changes to the themes without having to fork and publish them. This is the default approach when you clone/fork the starter repository.
+
+Second option simplifies your CI/CD setup and allows you to receive updates by simply bumping the package version. This also applies if you decide to use a different theme with the starter.
+
+To switch to the remote versions, open `package.json` and edit the dependency section:
+
+```js
+ "gatsby-theme-amaranth": "*",
+ // or
+  "gatsby-theme-advanced": "*",
 ```
-yarn remove netlify-cms-media-library-uploadcare
-```
-OR
-```
-yarn remove netlify-cms-media-library-cloudinary
-```
-## Getting Started (Without Netlify)
 
-```
-$ gatsby new [SITE_DIRECTORY_NAME] https://github.com/netlify-templates/gatsby-starter-netlify-cms/
-$ cd [SITE_DIRECTORY_NAME]
-$ npm run build
-$ npm run serve
+into
+
+```js
+ "gatsby-theme-amaranth": "3.2", // Or the version you want
+ // or
+  "gatsby-theme-advanced": "3.2", // Or the version you want
 ```
 
-### Setting up the CMS
+If you want to install a different theme outside of the repo, such as the [`gatsby-theme-material`](https://www.npmjs.com/package/gatsby-theme-material), run:
 
-Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
-
-## Debugging
-
-Windows users might encounter `node-gyp` errors when trying to npm install.
-To resolve, make sure that you have both Python 2.7 and the Visual C++ build environment installed.
-
-```
-npm config set python python2.7
-npm install --global --production windows-build-tools
+```sh
+yarn add gatsby-theme-material # Or any other Gatsby theme
 ```
 
-[Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')
+Then configure the theme in `gatsby-config.js`:
 
-MacOS users might also encounter some errors, for more info check [node-gyp](https://github.com/nodejs/node-gyp). We recommend using the latest stable node version.
+```js
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-theme-material`, // Or any other theme that you have installed
+      options: {
+        basePath: `/blog`, // Consult the documentation of the respective theme to figure out the applicable settings
+      },
+    },
+  ],
+};
+```
 
-## Purgecss
+## Configuration
 
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss.
+### Select a starting point
 
-# CONTRIBUTING
+To configure the theme edit your `gatsby-config.js`:
 
-Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+```js
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-theme-advanced`,
+      options: {
+        basePath: `/blog`,
+      },
+    },
+  ],
+};
+```
+
+Here you can switch between `gatsby-theme-advanced` and `gatsby-theme-amaranth` or any other Gatsby theme that you intend to use with the starter.
+
+For configuring the themes, consult their respective documentation pages:
+
+- [Advanced](themes/advanced/README.md)
+- [Amaranth](themes/amaranth/README.md)
+
+### NetlifyCMS
+
+First of all, make sure to edit `static/admin/config.yml` and add your [GitHub/GitLab/NetlifyId credentials](https://www.netlifycms.org/docs/authentication-backends/):
+
+```yml
+backend:
+  name: github # Refer to https://www.netlifycms.org/docs/authentication-backends/ for auth backend list and instructions
+  branch: master # Branch to update
+  repo: vagr9k/gatsby-material-starter # Repo for pushing new commits. Make sure to replace with your repo!
+```
+
+You can visit `/admin/` after and will be greeted by a login dialog (depending on the auth provider you ave chosen above).
+
+If want to customize Netlify CMS, e.g. registering custom widgets or styling the preview pane, you can do so by editing `src/netlifycms/index.js`:
+
+```js
+import CMS from "netlify-cms-app";
+
+CMS.init({
+  config: {
+    backend: {
+      name: "git-gateway",
+    },
+  },
+});
+```
+
+For NetlifyCMS specific issues visit the [official documentation](https://www.netlifycms.org/docs/intro/).
+
+### Contributing
+
+If you have any issues, questions or suggestions related to the starter then feel free to bring them up!
+
+If you'd like to contribute to the repository and need some pointers, take a look at the [Contribution Guide](./.github/CONTRIBUTING.md).
+
+# Author
+
+Ruben Harutyunyan ([@Vagr9K](https://twitter.com/Vagr9K))
